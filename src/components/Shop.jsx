@@ -3,6 +3,9 @@ import axios from "axios";
 
 const Shop = () => {
   const [data, setData] = useState([]);
+
+
+
   useEffect(() => {
     axios
       .get("https://world.openfoodfacts.org/api/v0/attribute_groups")
@@ -17,6 +20,8 @@ const Shop = () => {
     objectFit: "contain", // Add this
     
   };
+
+
 
   return (
     <div className="container mt-4">
